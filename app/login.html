@@ -1,0 +1,36 @@
+---
+title: 登入 - 六角西餐廳
+layout: ./app/layout.ejs
+engine: ejs
+current: login
+---
+
+    <!-- content -->
+    <main class="login">
+        <div class="container" data-aos="fade-up">
+            <h2 class="main-logo"><a href="index.html">六角西餐廳</a></h2>
+            <h4>享受美食好味道</h4>
+
+            <form action="login.html">
+                <h3>LOGIN</h3>
+
+                <div class="email">
+                    <label for="email">Email Address*</label>
+                    <i class="far fa-envelope"></i>
+                    <input id="email" type="email" name="email">
+                </div>
+
+                <div class="password">
+                    <label for="password">Password*</label>
+                    <i class="fas fa-lock"></i>
+                    <input id="password" type="password" name="password">
+                    <a href="#">忘記密碼？</a>
+                </div>
+
+                <div class="btn">
+                    <a href="./register.html" class="register-btn pure-button">註冊</a>
+                    <a href="#" class="login-btn pure-button">登入</a>
+                </div>
+            </form>
+        </div>
+    </main>

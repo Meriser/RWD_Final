@@ -1,0 +1,103 @@
+.login {
+    background-color: $color-primary-light;
+    color: $color-primary;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 3rem 0 0 0;
+    }
+
+    .main-logo a {
+        background-image: url(../images/logo_l.svg);
+        width: 243px;
+        height: 48px;
+        margin: 0 auto 0.5rem auto;
+        @include hide-text;
+        @include light;
+    }
+    h4 {
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 2.25rem;
+    }
+    form {
+        border-top: 3px solid $color-secondary;
+        box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+        padding: 1rem;
+        width: 300px;
+        h3 {
+            text-align: center;
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        label,input {
+            display: block;
+        }
+        label {
+            margin-bottom: 0.25rem;
+        }
+        input {
+            width: 100%;
+            border: 1px solid #bbbbbb;
+            height: 32px;
+            border-radius: 3px;
+            padding-left: 34px;
+        }
+
+        .email {
+            position: relative;
+            margin-bottom: 1rem;
+            i {
+                position: absolute;
+                left: 11px;
+                top: 50%;
+                transform: translateY(10%);
+                opacity: 0.5;
+            }
+        }
+
+        .password {
+            position: relative;
+            i {
+                position: absolute;
+                left: 12px;
+                top: 50%;
+                transform: translateY(-50%);
+                opacity: 0.5;
+            }
+        }
+
+        .email a,.password a {
+            font-size: 0.875rem;
+            color: $color-secondary;
+            padding: 0.25rem 0;
+            margin-bottom: 2rem;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .btn {
+            display: flex;
+            justify-content: space-between;
+        }
+        .register-btn {
+            background: rgba(0,0,0,0.35);
+            color: #fff;
+            padding: 0.5rem 2.875rem;
+            border-radius: 3px;
+            @include light;
+        }
+        .login-btn {
+            background-color: $color-secondary;
+            color: #fff;
+            padding: 0.5rem 2.875rem;
+            border-radius: 3px;
+            @include light;
+        }
+    }
+}
+

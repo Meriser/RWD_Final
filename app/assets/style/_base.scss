@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;    // 讓元素寬度 不受padding、border推擠影響
+}
+img {
+	max-width: 100%;       //   最大寬度不超過原圖100%
+	height: auto;          //   隨著寬度等比例自動縮放
+	display: block;        //   改為區塊元素清除圖片下方空隙(2~3px)
+}
+a {
+    display: block;           // 改為區塊元素
+    text-decoration: none;    // 取消下底線 
+}
+body {
+    font-family: sans-serif,微軟正黑體;
+}
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}

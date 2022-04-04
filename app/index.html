@@ -1,0 +1,143 @@
+---
+title: 六角西餐廳
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<!-- content -->
+<main class="index">
+    <div class="feature">
+        <div class="container">
+            <h2 data-aos="zoom-in">客人總是在詢問<br>
+                這麼好吃的秘訣是什麼
+            </h2>
+            <ul class="feature-info">
+                <li data-aos="fade-lfet">
+                    <img src="./assets/images/feature_1.png" alt="feature-pic">
+                    <h3>台灣本土蔬菜</h3>
+                    <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer
+                        et
+                        elit eget elit facilisis tristique. Nam vel iaculis mauris.
+                    </p>
+                </li>
+                <li data-aos="fade-lfet">
+                    <img src="./assets/images/feature_2.png" alt="feature-pic">
+                    <h3>專業米其林廚師</h3>
+                    <p>Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor
+                        velit,
+                        eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan
+                        turpis.
+                    </p>
+                </li>
+                <li data-aos="fade-lfet">
+                    <img src="./assets/images/feature_3.png" alt="feature-pic">
+                    <h3>對於專業不能退讓</h3>
+                    <p>Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at
+                        nibh
+                        quis, facilisis accumsan turpis.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="chef">
+        <div class="container">
+            <img src="./assets/images/main_chef_brown.png" alt="chef" data-aos="zoom-in">
+            <div class="chef-info" data-aos="zoom-in-down">
+                <h2>今日主廚：帕金森、梅在帕</h2>
+                <h3>Tody Chef: Plum in Shock</h3>
+                <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate.
+                    Etiam
+                    elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia
+                    dui
+                    sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu
+                    ipsum.
+                    Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus
+                    mattis
+                    varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor
+                    sollicitudin fermentum. Donec congue lorem a molestie bibendum.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="review">
+        <div class="container">
+            <h2 data-aos="zoom-in">聽聽別人的感想</h2>
+            <ul class="review-info">
+                <li data-aos="fade-lfet">
+                    <img src="./assets/images/avatar_1.png" alt="customer">
+                    <span>
+                        <h3>高雄一口吃</h3>
+                        <p>
+                            自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+                        </p>
+                        <h4> -- 產品經理</h4>
+                    </span>
+                </li>
+                <li data-aos="fade-lfet">
+                    <img src="./assets/images/avatar_2.png" alt="customer">
+                    <span>
+                        <h3>廟口小霸王</h3>
+                        <p>
+                            自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+                        </p>
+                        <h4> -- 金身道士</h4>
+                    </span>
+                </li>
+                <li data-aos="fade-lfet">
+                    <img src="./assets/images/avatar_3.png" alt="customer">
+                    <span>
+                        <h3>春天也來了</h3>
+                        <p>
+                            自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+                        </p>
+                        <h4> -- 美麗萬分</h4>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="booking">
+        <div class="container">
+            <h2 data-aos="zoom-in">我們的位置不太夠坐<br>
+                要不要先訂位呢?
+            </h2>
+            <div class="booking-info">
+                <img src="./assets/images/Map.png" alt="map" data-aos="zoom-in">
+                <form action="index.html" data-aos="zoom-in-down">
+                    <label for="person">姓名</label>
+                    <input id="person" type="text" name="person" placeholder="六角講師吃尾牙">
+
+                    <label for="phone">電話</label>
+                    <input id="phone" type="tel" name="phone" placeholder="02-12345678">
+
+                    <label for="email">信箱</label>
+                    <input id="email" type="email" name="email" placeholder="test@gmail.com">
+
+                    <label for="number">人數</label>
+                    <input id="number" type="number" name="number">
+
+                    <div class="vegan">
+                        <p>是否需要素食</p>
+                        <div class="checkbox">
+                            <label for="vegan-yes">是</label><input id="vegan-yes" type="radio" name="vegan"
+                                value="vegan-yes">
+                            <label for="vegan-no">否</label><input id="vegan-no" type="radio" name="vegan"
+                                value="vegan-no">
+                        </div>
+                    </div>
+
+                    <div class="btn">
+                        <button class="close pure-button">取消</button>
+                        <button class="submit pure-button">送出</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</main>

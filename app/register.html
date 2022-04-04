@@ -1,0 +1,53 @@
+---
+title: 註冊 - 六角西餐廳
+layout: ./app/layout.ejs
+engine: ejs
+current: register
+---
+
+    <!-- content -->
+    <main class="register">
+        <div class="container" data-aos="fade-up">
+            <h2 class="main-logo"><a href="index.html">六角西餐廳</a></h2>
+            <h4>享受美食好味道</h4>
+
+            <form action="register.html">
+                <h3>REGISTER</h3>
+
+                <div class="form-body">
+                    <div class="terms">
+                        <h5>就是這樣條款：</h5>
+                        <p>
+                            Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere
+                            vulputate.
+                            Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque,
+                            lacinia dui sed, ultricies sapien...
+                        </p>
+                    </div>
+
+                    <div class="form-input">
+                        <div class="email">
+                            <label for="email">Email Address*</label>
+                            <i class="far fa-envelope"></i>
+                            <input id="email" type="email" name="email">
+                        </div>
+
+                        <div class="password">
+                            <label for="password">Password*</label>
+                            <i class="fas fa-lock"></i>
+                            <input id="password" type="password" name="password">
+                        </div>
+                        <div class="confirm-password">
+                            <input id="confirm-password" type="password" name="confirm-password">
+                            <i class="fas fa-lock"></i>
+                            <a href="./login.html">已經有帳號了？</a>
+                        </div>
+
+                        <div class="btn">
+                            <a href="./login.html" class="register-btn pure-button">註冊</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>

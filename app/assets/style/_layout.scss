@@ -1,0 +1,228 @@
+.header {
+    background: rgba(0,0,0,0.75);
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3rem;
+    }
+    .logo {
+        background-image: url(../images/logo_w.svg);
+        width: 120px;
+        height: 24px;
+        @include hide-text;
+        @include light;
+    }
+    .menu {
+        display: flex;
+    }
+    .menu li a {
+        padding: 1.25rem 1rem;
+        color: #fff;
+        transition: 0.2s all;
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    }
+    .showmenu {
+        display: none;
+    }
+
+    @include mobile {
+        .container {
+            padding: 0 1rem;
+        }
+        .menu {
+            text-align: center;
+            font-size: 1.25rem;
+            background: rgba(0,0,0,0.75);
+            /*隱藏選單開始*/
+            max-height: 0px;
+            overflow: hidden;
+        
+            /*隱藏選單結束*/
+            transition: max-height 1s;
+        
+            /*絕對定位疊在網頁上*/
+            position: absolute;
+        
+            /*z-index 決定元素排列順序*/
+            z-index: 100;
+        
+            /*header 56px*/
+            top: 56px;
+            left: 0;
+            right: 0;
+        
+            /*改為直向排列選單*/
+            flex-direction: column;
+        }
+        .showmenu {
+            display: block;
+            margin: 1rem 0;
+            font-size: 1.5rem;
+            color: #fff;
+            @include scaled;
+        }
+    }
+}
+
+.banner {
+    background: rgb(0, 0, 0);
+    background-image: url(../images/header_desktop.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 420px;
+    }
+    .slogan {
+        background: rgba(0,0,0,0.35);
+        color: #fff;
+        padding: 1.25rem 2rem;
+        text-align: center;
+    }
+    h2 {
+        font-size: 2.25rem;
+        font-weight: bold;
+        line-height: 48px;
+        margin-bottom: 1rem;
+        br {
+            display: none;
+        }
+    }
+    h3 {
+        line-height: 1.5;
+    }
+
+    @include mobile {
+        background-image: url(../images/header_mobile.png);
+        .slogan {
+            padding: 1.25rem 1rem;
+        }
+        h2 br {
+            display: block;
+        }
+    }
+}
+
+.footer {
+    background-color: $color-primary-light;
+    color: $color-primary;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 3.125rem 2.625rem;
+        width: 100%;
+    }
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    p,li a{
+        line-height: 1.5;
+    }
+    .about {
+        display: flex;
+        .about-info {
+            width: 300px;
+            margin-right: 1.25rem;
+        }
+    }
+    .contact ul {
+        list-style: disc;
+        padding-left: 1.25rem;
+    }
+    .contact li a {
+        color: $color-primary;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .icon {
+        display: flex;
+        flex-direction: column;
+        .footer-logo a {
+            background-image: url(../images/logo_l.svg);
+            width: 243px;
+            height: 48px;
+            margin-bottom: 1.5rem;
+            @include hide-text;
+            @include light;
+        }
+    }
+    .icon ul {
+        display: flex;
+        justify-content: flex-end;
+        li a img {
+            width: 36px;
+            height: 32px;
+            margin-left: 0.75rem;
+            @include scaled;
+        }
+    }
+
+    @include PC {
+        .about {
+            flex-wrap: wrap;
+        }
+        .about-info,.contact {
+            margin-bottom: 2rem;
+        }
+    }
+
+    @include pad {
+        .container {
+            padding: 3rem 0.75rem;
+        }
+        .about .about-info {
+            margin-right: 0;
+            width: 280px;
+        }
+        .icon {
+            align-self: flex-start;
+        }
+    }
+
+    @include mobile {
+        .container {
+            flex-wrap: wrap;
+            padding-bottom: 5rem;
+        }
+        .icon {
+            width: 100%;
+            .footer-logo {
+                align-self: flex-end;
+            }
+        }
+        
+    }
+}
+
+// Scroll-TOP
+.scroll-top a {
+    background-color: $color-secondary;
+    border-radius: 50%;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    opacity: 0.8;
+    display: none;
+    &:hover {
+        transition: 0.2s all;
+        transform: scale(1.2);
+    }
+    i {
+        font-size: 2rem;
+        padding: 0.25rem 0.5rem;
+        color: #fff;
+    }
+}
