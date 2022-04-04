@@ -1,10 +1,74 @@
----
-title: 商品 - 六角西餐廳
-layout: ./app/layout.ejs
-engine: ejs
-current: product
----
+<!DOCTYPE html>
+<html lang="zh-TW">
 
+<head>
+  <title>
+    商品 - 六角西餐廳
+  </title>
+  <link rel="icon" href="./assets/images/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="author" content="Meri">
+  <meta name="keywords" content="六角西餐廳, 六角大漢堡, 咬一口就無法忘懷的漢堡, Hamburger, delicacy">
+  <meta property="og:title" content="六角西餐廳">
+  <meta property="og:description" content="咬一口就無法忘懷的漢堡，七夕絕對無法錯過的好滋味。">
+  <meta property="og:site_name" content="六角西餐廳">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:image" content="./assets/images/logo_w.svg">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+  <link rel="stylesheet" href="./assets/style/pure-buttons.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <!-- AOS.js -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+    });
+  </script>
+
+  <!-- header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">六角西餐廳</a></h1>
+      <ul class="menu">
+        <li>
+          <a href="index.html">首頁</a>
+        </li>
+        <li>
+          <a href="product.html">商品</a>
+        </li>
+        <li>
+          <a href="login.html">登入</a>
+        </li>
+      </ul>
+      <a href="#" class="showmenu">
+        <i class="fas fa-bars"></i>
+      </a>
+    </div>
+  </header>
+  <div class="banner" data-aos="fade-lfet">
+    <div class="container">
+      <div class="slogan">
+        <h2>咬一口<br>就無法忘懷的漢堡</h2>
+        <h3>
+          七夕絕對無法錯過的好滋味<br>
+          <i class="fa-solid fa-utensils"></i>
+          六角大漢堡
+          <i class="fa-solid fa-utensils"></i>
+        </h3>
+      </div>
+    </div>
+  </div>
+
+  
 <!-- content -->
 <main class="product">
     <div class="container">
@@ -96,3 +160,48 @@ current: product
         </div>
     </div>
 </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="about">
+          <div class="about-info">
+            <h3>關於 六角西餐廳</h3>
+            <p>
+              Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue
+              enim,pulvinar lobortis nibh lacinia at.
+            </p>
+          </div>
+          <div class="contact">
+            <h3>聯絡方式</h3>
+            <ul>
+              <li><a href="#"> 高雄市中正五路到底</a></li>
+              <li><a href="tel:+"> +886 886 886</a></li>
+              <li><a href="mailto:"> service@hexschool.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="icon">
+          <h2 class="footer-logo"><a href="index.html">六角西餐廳</a></h2>
+          <ul>
+            <li><a href="#"><img src="./assets/images/google+_icon.svg" alt="google+" title="google+"></a></li>
+            <li><a href="#"><img src="./assets/images/twitter_icon.svg" alt="twitter" title="twitter"></a></li>
+            <li><a href="#"><img src="./assets/images/fb_icon.svg" alt="facebook" title="facebook"></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll-Top -->
+    <div class="scroll-top">
+      <a href="#">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+
+    <!-- JS -->
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
