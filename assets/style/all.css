@@ -125,9 +125,9 @@ body {
       max-height: 0px;
       overflow: hidden;
       /*隱藏選單結束*/
-      -webkit-transition: max-height 1s;
-      -o-transition: max-height 1s;
-      transition: max-height 1s;
+      -webkit-transition: max-height 0.8s;
+      -o-transition: max-height 0.8s;
+      transition: max-height 0.8s;
       /*絕對定位疊在網頁上*/
       position: absolute;
       /*z-index 決定元素排列順序*/
