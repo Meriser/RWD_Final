@@ -6,6 +6,30 @@ $(document).ready(function () {
         $('i', this).toggleClass('fas fa-bars fa-solid fa-xmark');
     });
 
+    // Swiper 輪播器
+    const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        speed: 1000,
+        loop: true,
+
+        autoplay: {
+            delay: 2500,
+        },
+        effect: "fade",
+
+        // If we need pagination
+        pagination: {
+            el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
     // Scroll to top 效果
     $(".scroll-top a").click(function (e) {
         e.preventDefault();

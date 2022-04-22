@@ -21,6 +21,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
   <link rel="stylesheet" href="./assets/style/pure-buttons.css">
+  <link rel="stylesheet" href="./assets/style/swiper.css">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -58,18 +59,25 @@
       </a>
     </div>
   </header>
-  <div class="banner" data-aos="fade-lfet">
-    <div class="container">
-      <div class="slogan">
-        <h2>咬一口<br>就無法忘懷的漢堡</h2>
-        <h3>
-          七夕絕對無法錯過的好滋味<br>
-          <i class="fa-solid fa-utensils"></i>
-          六角大漢堡
-          <i class="fa-solid fa-utensils"></i>
-        </h3>
+
+  <!-- Slider main container -->
+  <div class="swiper" data-aos="fade-lfet">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides banner -->
+      <div class="swiper-slide banner-1">
+      </div>
+      <div class="swiper-slide banner-2">
+      </div>
+      <div class="swiper-slide banner-3">
       </div>
     </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </div>
 
   <%- contents %>
@@ -114,6 +122,7 @@
 
     <!-- JS -->
     <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/swiper.js"></script>
     <script src="./assets/js/all.js"></script>
 </body>
 
